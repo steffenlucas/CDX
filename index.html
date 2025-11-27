@@ -126,3 +126,884 @@
       border-radius: 999px;
       border: 1px solid rgba(255, 122, 50, 0.7);
       background: rgba(255, 122, 50, 0.12);
+      padding: 0.4rem 0.9rem;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--accent-soft);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .nav-cta:hover {
+      background: rgba(255, 122, 50, 0.25);
+    }
+
+    /* HERO */
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+      margin-bottom: 2.5rem;
+      margin-top: 1rem;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.7rem;
+      padding: 0.25rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid var(--border-subtle);
+      background: rgba(15, 15, 25, 0.9);
+      color: var(--text-muted);
+    }
+
+    .hero-tag-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    .hero-title {
+      font-size: 1.85rem;
+      line-height: 1.2;
+      font-weight: 600;
+    }
+
+    .hero-title span {
+      color: var(--accent);
+      display: block;
+    }
+
+    .hero-text {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      max-width: 34rem;
+      line-height: 1.6;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+    }
+
+    .btn-primary {
+      border-radius: 999px;
+      background: var(--accent);
+      color: #050608;
+      padding: 0.6rem 1.3rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.75);
+    }
+
+    .btn-primary:hover {
+      background: #ff9458;
+    }
+
+    .btn-ghost {
+      border-radius: 999px;
+      border: 1px solid var(--border-subtle);
+      background: transparent;
+      color: var(--text-main);
+      padding: 0.6rem 1.3rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .btn-ghost:hover {
+      border-color: #3f3f46;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+
+    .mini-card {
+      border-radius: 1rem;
+      border: 1px solid var(--border-subtle);
+      background: rgba(9, 9, 11, 0.9);
+      padding: 0.9rem 1rem;
+    }
+
+    .mini-label {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: #71717a;
+      margin-bottom: 0.35rem;
+      font-weight: 600;
+    }
+
+    .mini-number {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.1rem;
+    }
+
+    .mini-desc {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* FOUNDERS TILE */
+
+    .founders-card {
+      border-radius: 1.8rem;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      background: #020203;
+      box-shadow: 0 26px 70px rgba(0, 0, 0, 0.85);
+    }
+
+    .founders-top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .founders-photo {
+      height: 190px;
+      background: #0b0b11;
+    }
+
+    .founders-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(100%);
+    }
+
+    .founders-middle {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .founders-text-block {
+      padding: 0.85rem 0.9rem 1rem;
+      font-size: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      background: #050609;
+    }
+
+    .founders-text-block--orange {
+      background: var(--accent);
+      color: #201005;
+    }
+
+    .founders-tag {
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      opacity: 0.7;
+    }
+
+    .founders-name {
+      font-weight: 600;
+    }
+
+    .founders-bio {
+      font-size: 0.7rem;
+      line-height: 1.5;
+      color: var(--text-muted);
+    }
+
+    .founders-bio--dark {
+      color: #3d2612;
+    }
+
+    .founders-bottom {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      background: #050609;
+    }
+
+    .founders-bottom-left {
+      border-right: 1px solid var(--border-subtle);
+      padding: 0.9rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.4rem;
+    }
+
+    .founders-bottom-label {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.24em;
+      color: #52525b;
+      font-weight: 600;
+    }
+
+    .founders-bottom-logo {
+      font-size: 2.4rem;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      color: #e4e4e7;
+    }
+
+    .founders-bottom-right {
+      padding: 0.9rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+    }
+
+    .star {
+      width: 24px;
+      height: 24px;
+      position: relative;
+    }
+
+    .star::before,
+    .star::after {
+      content: "";
+      position: absolute;
+      background: var(--accent);
+      border-radius: 999px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .star::before {
+      width: 100%;
+      height: 2px;
+    }
+
+    .star::after {
+      width: 2px;
+      height: 100%;
+    }
+
+    .founders-bottom-copy {
+      font-size: 0.68rem;
+      text-align: center;
+      color: var(--text-muted);
+    }
+
+    /* SECTIONS */
+
+    section {
+      margin-bottom: 2.75rem;
+    }
+
+    .section-header {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .section-tag {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--accent-soft);
+      font-weight: 600;
+    }
+
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .section-sub {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      max-width: 32rem;
+      line-height: 1.6;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.9rem;
+    }
+
+    .card {
+      border-radius: 1rem;
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-elevated);
+      padding: 1rem;
+    }
+
+    .card-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .card-tagline {
+      font-size: 0.75rem;
+      color: #71717a;
+      margin-bottom: 0.45rem;
+    }
+
+    .card-body {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* TRACK RECORD */
+
+    .track-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.9rem;
+    }
+
+    .track-card {
+      border-radius: 1rem;
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-elevated);
+      padding: 0.9rem;
+    }
+
+    .track-top {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: #71717a;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+    }
+
+    .track-main {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .track-detail {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* CASES */
+
+    .case-pill {
+      font-size: 0.7rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 999px;
+      border: 1px solid var(--border-subtle);
+      display: inline-block;
+      margin-bottom: 0.4rem;
+      color: #a1a1aa;
+    }
+
+    /* INFOPRODUTOS */
+
+    .badge-soon {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.7rem;
+      padding: 0.15rem 0.55rem;
+      border-radius: 999px;
+      border: 1px dashed rgba(255, 122, 50, 0.5);
+      color: var(--accent-soft);
+      margin-left: 0.25rem;
+    }
+
+    .badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    /* CONTATO */
+
+    .contact-box {
+      border-radius: 1.3rem;
+      border: 1px solid rgba(255, 122, 50, 0.7);
+      background: radial-gradient(circle at top left, rgba(255, 122, 50, 0.22), #050608 60%);
+      padding: 1.2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+
+    .contact-title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .contact-text {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      border-radius: 999px;
+      background: #22c55e;
+      color: #031104;
+      padding: 0.65rem 1.4rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: none;
+    }
+
+    .btn-whatsapp span {
+      font-size: 1.05rem;
+    }
+
+    .btn-whatsapp:hover {
+      background: #4ade80;
+    }
+
+    .contact-footnote {
+      font-size: 0.7rem;
+      color: #71717a;
+    }
+
+    /* FOOTER */
+
+    footer {
+      margin-top: 2rem;
+      padding-top: 1.3rem;
+      border-top: 1px solid var(--border-subtle);
+      font-size: 0.7rem;
+      color: #71717a;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    footer a {
+      color: #a1a1aa;
+    }
+
+    /* RESPONSIVO */
+
+    @media (min-width: 720px) {
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 0.75rem;
+        color: #d4d4d8;
+      }
+
+      .nav-link {
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        font-weight: 500;
+      }
+
+      .hero {
+        flex-direction: row;
+      }
+
+      .hero-main {
+        flex: 1.2;
+      }
+
+      .hero-side {
+        flex: 1;
+      }
+
+      .hero-title {
+        font-size: 2.35rem;
+      }
+
+      .hero-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .founders-photo {
+        height: 220px;
+      }
+
+      .founders-bottom-logo {
+        font-size: 3rem;
+      }
+
+      .cards-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .track-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+    }
+
+    @media (min-width: 960px) {
+      .hero-title {
+        font-size: 2.8rem;
+      }
+
+      .hero-text {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <div class="logo-box">
+          <span>CDX</span>
+        </div>
+        <div class="nav-text">
+          <div class="nav-title">Gestão & Performance</div>
+          <div class="nav-subtitle">Consultoria em negócios, dados e vendas</div>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#track-record" class="nav-link">Track Record</a>
+        <a href="#metodo" class="nav-link">Método</a>
+        <a href="#cases" class="nav-link">Cases</a>
+        <a href="#infoprodutos" class="nav-link">Infoprodutos</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+
+      <a href="#contato" class="nav-cta">Fale com a CDX</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="hero-main">
+        <div class="hero-tag">
+          <span class="hero-tag-dot"></span>
+          Consultoria feita pelos próprios sócios, com poucas contas ativas
+        </div>
+        <h1 class="hero-title">
+          Gestão, dados e vendas
+          <span>olhando para o mesmo número.</span>
+        </h1>
+        <p class="hero-text">
+          A CDX entra na operação para organizar a casa, conectar gestão, financeiro e canais de venda
+          e construir previsibilidade. Atuamos junto com o time para destravar processos, leitura de dados
+          e performance comercial — sempre ancorados no DRE.
+        </p>
+        <div class="hero-actions">
+          <a href="#contato" class="btn-primary">Agendar conversa com os sócios</a>
+          <a href="#metodo" class="btn-ghost">Ver como trabalhamos</a>
+        </div>
+
+        <div class="hero-grid" style="margin-top:1.4rem">
+          <div class="mini-card">
+            <div class="mini-label">Operações acompanhadas</div>
+            <div class="mini-number">+R$ 300M</div>
+            <div class="mini-desc">em GMV entre varejo, e-commerce, indústria e serviços.</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-label">Foco da CDX</div>
+            <div class="mini-number">Gestão & Performance</div>
+            <div class="mini-desc">Processos, dados, mídia, CRM, inside sales e eficiência comercial.</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-label">Formato</div>
+            <div class="mini-number">Poucos clientes</div>
+            <div class="mini-desc">Alta senioridade, proximidade com sócios e decisões no detalhe.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOUNDERS BLOCK -->
+      <aside class="hero-side">
+        <article class="founders-card" id="founders" aria-label="Sócios da CDX">
+          <div class="founders-top">
+            <div class="founders-photo">
+              <!-- Trocar pelo caminho real da foto do Cadu -->
+              <img src="images/cadu-cdx.jpg" alt="Carlos Dieter - Sócio CDX" />
+            </div>
+            <div class="founders-photo">
+              <!-- Trocar pelo caminho real da foto do Lucas -->
+              <img src="images/lucas-cdx.jpg" alt="Lucas Steffen - Sócio CDX" />
+            </div>
+          </div>
+          <div class="founders-middle">
+            <div class="founders-text-block">
+              <div class="founders-tag">Quem lidera</div>
+              <div class="founders-name">Carlos Dieter</div>
+              <p class="founders-bio">
+                Empreendedor, especialista em vendas, performance e gestão. Mais de 14 anos construindo
+                e liderando operações comerciais omnichannel.
+              </p>
+            </div>
+            <div class="founders-text-block founders-text-block--orange">
+              <div class="founders-tag">Quem lidera</div>
+              <div class="founders-name">Lucas Steffen</div>
+              <p class="founders-bio founders-bio--dark">
+                Estrategista em Produto, Dados & Growth. Focado em conectar gestão, dados, marketing e
+                finanças para gerar resultado consistente no DRE.
+              </p>
+            </div>
+          </div>
+          <div class="founders-bottom">
+            <div class="founders-bottom-left">
+              <div class="founders-bottom-label">Gestão & Performance</div>
+              <div class="founders-bottom-logo">CDX</div>
+            </div>
+            <div class="founders-bottom-right">
+              <div class="star"></div>
+              <p class="founders-bottom-copy">
+                Consultoria enxuta, focada em poucos projetos para ir fundo em cada operação.
+              </p>
+            </div>
+          </div>
+        </article>
+      </aside>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre">
+      <header class="section-header">
+        <div class="section-tag">Sobre a CDX</div>
+        <h2 class="section-title">Um parceiro de gestão e performance, não “só mais uma consultoria”.</h2>
+        <p class="section-sub">
+          Atuamos com times que já têm operação rodando, mas precisam organizar a gestão, melhorar a leitura de dados
+          e destravar o próximo ciclo de crescimento. Entramos para estruturar processos, rituais de gestão
+          e estratégia comercial — sempre com Lucas e Cadu na mesma mesa de decisão que a liderança.
+        </p>
+      </header>
+    </section>
+
+    <!-- TRACK RECORD -->
+    <section id="track-record">
+      <header class="section-header">
+        <div class="section-tag">Track record</div>
+        <h2 class="section-title">Alguns números que contam melhor a nossa história.</h2>
+        <p class="section-sub">
+          Cada projeto é diferente, mas a lógica é sempre a mesma: entender o negócio a fundo, organizar a casa
+          e construir um plano executável. Abaixo, dados consolidados da atuação dos sócios nos últimos anos.
+        </p>
+      </header>
+
+      <div class="track-grid">
+        <article class="track-card">
+          <div class="track-top">GMV sob influência</div>
+          <div class="track-main">+R$ 300M</div>
+          <p class="track-detail">Entre varejo de moda, indústria, serviços financeiros e saúde.</p>
+        </article>
+        <article class="track-card">
+          <div class="track-top">Experiência</div>
+          <div class="track-main">10+ anos</div>
+          <p class="track-detail">Em liderança de e-commerce, mídia, CRM, vendas e gestão de times.</p>
+        </article>
+        <article class="track-card">
+          <div class="track-top">Projetos</div>
+          <div class="track-main">+50</div>
+          <p class="track-detail">Planos de crescimento, reestruturações, squads de performance e turnarounds.</p>
+        </article>
+        <article class="track-card">
+          <div class="track-top">Formato de atuação</div>
+          <div class="track-main">Hands on</div>
+          <p class="track-detail">Do board às planilhas, passando pelos rituais de operação e times de linha de frente.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- METODO -->
+    <section id="metodo">
+      <header class="section-header">
+        <div class="section-tag">Método CDX</div>
+        <h2 class="section-title">Do diagnóstico ao jogo rodando — com cadência, dados e responsabilidade.</h2>
+        <p class="section-sub">
+          Não acreditamos em planos que não cabem na agenda de ninguém. Nosso método é simples na forma
+          e profundo no conteúdo: clareza de direção, prioridades e números que importam.
+        </p>
+      </header>
+
+      <div class="cards-grid">
+        <article class="card">
+          <h3 class="card-title">1. Diagnóstico & alinhamento</h3>
+          <p class="card-tagline">Entender a empresa antes de sugerir qualquer coisa.</p>
+          <p class="card-body">
+            Entrevistas com liderança, leitura do DRE, análise de funis, canais, calendário comercial e volumetria
+            de esforço. A partir daí, alinhamos objetivos, restrições e o nível de profundidade que faz sentido
+            para o momento do negócio.
+          </p>
+        </article>
+        <article class="card">
+          <h3 class="card-title">2. Direção & plano de ataque</h3>
+          <p class="card-tagline">Priorizar o essencial e desenhar o caminho.</p>
+          <p class="card-body">
+            Construímos uma tese de crescimento, definimos metas realistas e desdobramos em projetos e sprints:
+            gestão, dados, marketing, comercial, operação. Tudo com responsáveis, prazos e indicadores claros.
+          </p>
+        </article>
+        <article class="card">
+          <h3 class="card-title">3. Execução guiada</h3>
+          <p class="card-tagline">Estar perto o suficiente para fazer diferença.</p>
+          <p class="card-body">
+            Acompanhamos a execução com rituais semanais, suporte no dia a dia e tomada de decisão junto com o time.
+            O objetivo é sempre o mesmo: sair da teoria e colocar o plano para rodar no calendário real da empresa.
+          </p>
+        </article>
+        <article class="card">
+          <h3 class="card-title">4. Rotina & performance</h3>
+          <p class="card-tagline">Garantir que o resultado continue depois da consultoria.</p>
+          <p class="card-body">
+            Estruturamos rituais de gestão, painéis de dados, trilhas comerciais e processos de melhoria contínua.
+            Queremos que a empresa siga crescendo mesmo quando a CDX não está na sala.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CASES -->
+    <section id="cases">
+      <header class="section-header">
+        <div class="section-tag">Cases</div>
+        <h2 class="section-title">Alguns contextos em que a CDX fez diferença.</h2>
+        <p class="section-sub">
+          Cada case é único, mas todos têm algo em comum: um problema real, um diagnóstico honesto
+          e um plano executável com medição próxima de resultado.
+        </p>
+      </header>
+
+      <div class="cards-grid">
+        <article class="card">
+          <span class="case-pill">Varejo de moda • E-commerce</span>
+          <h3 class="card-title">Organizar a casa antes de pisar mais forte no acelerador.</h3>
+          <p class="card-body">
+            Entrada em um varejo de moda com forte dependência de desconto. Atuamos em estruturação de calendário
+            comercial, governança de mídia, CRM e inside sales. Resultado: melhora de margem bruta
+            em coleções atuais e maior previsibilidade das campanhas.
+          </p>
+        </article>
+        <article class="card">
+          <span class="case-pill">Indústria • Canais B2B & B2C</span>
+          <h3 class="card-title">Conectar diretoria, marketing e comercial em um mesmo plano.</h3>
+          <p class="card-body">
+            Diagnóstico completo da operação, desenho de comitês de gestão, calendário de campanhas e rituais
+            entre fábrica, representantes e canais digitais. Direcionamento claro de metas, investimentos
+            e prioridades por trimestre.
+          </p>
+        </article>
+        <article class="card">
+          <span class="case-pill">Serviços & saúde • Produto digital</span>
+          <h3 class="card-title">Transformar dados dispersos em decisões de crescimento.</h3>
+          <p class="card-body">
+            Consolidação de indicadores, construção de funil unificado (acquisition → engajamento → retenção),
+            squad de growth e cadência de experimentos. Evolução no entendimento de LTV, CAC e cohortes
+            de uso do produto para orientar o roadmap.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- INFOPRODUTOS -->
+    <section id="infoprodutos">
+      <header class="section-header">
+        <div class="section-tag">Infoprodutos CDX</div>
+        <h2 class="section-title">
+          Conteúdo prático para quem quer aplicar a lógica da CDX no próprio negócio
+          <span class="badge-soon"><span class="badge-dot"></span>Em breve</span>
+        </h2>
+        <p class="section-sub">
+          Além da consultoria 1:1, estamos estruturando uma linha de produtos digitais focados em gestão, dados
+          e performance. Materiais pensados para donos, gestores e times que querem subir o nível de execução.
+        </p>
+      </header>
+
+      <div class="cards-grid">
+        <article class="card">
+          <h3 class="card-title">Playbook de Gestão & Performance</h3>
+          <p class="card-tagline">Da visão ao DRE — o jeito CDX de organizar o negócio.</p>
+          <p class="card-body">
+            Frameworks, checklists e exemplos práticos para organizar gestão, metas, calendário comercial, mídia,
+            CRM e rituais do time. Um guia para sair da sensação de apagar incêndio o tempo todo.
+          </p>
+        </article>
+        <article class="card">
+          <h3 class="card-title">Mentoria em grupo CDX</h3>
+          <p class="card-tagline">Para empresas em fase de construção de máquina de crescimento.</p>
+          <p class="card-body">
+            Encontros em grupo com donos e gestores, aplicando na prática os conceitos de gestão, dados e performance
+            da CDX. Foco em descomplicar números e transformar em decisões de calendário e execução.
+          </p>
+        </article>
+        <article class="card">
+          <h3 class="card-title">Ferramentas & templates</h3>
+          <p class="card-tagline">Planilhas, dashboards e modelos para o dia a dia.</p>
+          <p class="card-body">
+            Modelos prontos de DRE gerencial, painéis de performance, régua de CRM, planejamento de mídia
+            e playbook comercial. Tudo em formato adaptável para sua realidade.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTATO / WHATSAPP -->
+    <section id="contato">
+      <header class="section-header">
+        <div class="section-tag">Contato</div>
+        <h2 class="section-title">Quer conversar sobre a sua operação?</h2>
+        <p class="section-sub">
+          Se você sente que o negócio poderia estar performando melhor, mas falta tempo, clareza ou estrutura
+          para organizar tudo, talvez seja a hora de colocar a CDX na mesa.
+        </p>
+      </header>
+
+      <div class="contact-box">
+        <h3 class="contact-title">Fale com a CDX direto pelo WhatsApp.</h3>
+        <p class="contact-text">
+          Envie uma mensagem contando em poucas linhas o momento da empresa, principais desafios e o que você
+          espera destravar. A partir daí, marcamos uma conversa estruturada para avaliar se faz sentido avançar.
+        </p>
+
+        <!-- Trocar o link abaixo pelo número oficial -->
+        <a
+          class="btn-whatsapp"
+          href="https://wa.me/55SEUNUMERO?text=Oi,%20quero%20conversar%20sobre%20gest%C3%A3o%20e%20performance%20com%20a%20CDX."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>💬</span>
+          Falar com a CDX no WhatsApp
+        </a>
+
+        <p class="contact-footnote">
+          Respostas em horário comercial. Caso prefira, podemos agendar também por e-mail.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div>© <span id="year"></span> CDX Gestão & Performance. Todos os direitos reservados.</div>
+      <div>
+        Site one-page • Conteúdo orientado pelos sócios •
+        <a href="#inicio">voltar ao topo</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Atualiza ano automático no footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
