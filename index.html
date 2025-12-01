@@ -251,38 +251,95 @@
       letter-spacing: 0.05em;
     }
 
-    /* FOUNDERS */
-    .founders-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2rem;
-      margin-top: 4rem;
-      background: var(--bg-surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 2rem;
-      box-shadow: var(--shadow-sm);
-    }
-    
-    .founders-imgs {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-    }
-    
-    .founder-avatar {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      overflow: hidden;
-      border: 2px solid var(--bg-surface-alt);
-    }
-    .founder-avatar img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); }
+   /* CSS ESPECÍFICO DO CARD DE FOUNDERS */
 
-    .founder-info h3 { font-size: 1.2rem; margin-bottom: 1rem; }
-    .founder-block { margin-bottom: 1.5rem; }
-    .founder-name { font-weight: 700; display: block; margin-bottom: 0.25rem; }
-    .founder-role { font-size: 0.9rem; color: var(--text-muted); }
+.founders-card {
+  margin-top: 4rem;
+  background: #FFFFFF;
+  border: 1px solid var(--border); /* Usa a variável que definimos antes */
+  border-radius: 1.5rem; /* Borda bem arredondada como no print */
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.founder-row {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+/* Área da Imagem (Círculo) */
+.founder-visual {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #E5E7EB;
+  background: #F9FAFB;
+}
+
+.founder-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Se usar foto colorida, o grayscale deixa mais sério. Remova se quiser cor. */
+  filter: grayscale(100%); 
+}
+
+/* Área de Texto */
+.founder-content {
+  flex: 1;
+  padding-top: 0.25rem; /* Ajuste fino para alinhar o topo do texto com o topo da imagem */
+}
+
+.founder-name {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.35rem;
+}
+
+.founder-bio {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: #6B7280; /* Cinza suave */
+  line-height: 1.6;
+}
+
+/* Footer do Card com a linha */
+.founders-footer {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #E5E7EB;
+  font-size: 0.9rem;
+  color: #374151;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Responsivo para Celular */
+@media (max-width: 640px) {
+  .founders-card {
+    padding: 1.5rem;
+  }
+  
+  .founder-row {
+    flex-direction: column; /* No celular a foto fica em cima do nome */
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+  
+  .founder-visual {
+    width: 64px;
+    height: 64px;
+  }
+}
 
     /* COMMON GRID LAYOUTS */
     .section-header {
