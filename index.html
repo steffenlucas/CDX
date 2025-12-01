@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="CDX — Consultoria em gestão, dados e performance comercial. Foco em resultado real no DRE." />
 
-  <!-- Fontes do Google para um visual mais Premium -->
+  <!-- Fontes do Google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -251,97 +251,74 @@
       letter-spacing: 0.05em;
     }
 
-   /* CSS ESPECÍFICO DO CARD DE FOUNDERS */
+    /* --- CSS DOS FOUNDERS (CORRIGIDO) --- */
+    .founders-card {
+      margin-top: 4rem;
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 1.5rem;
+      padding: 2.5rem;
+      box-shadow: var(--shadow-sm);
+      max-width: 860px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left; /* Garante que o texto fique à esquerda */
+    }
 
-.founders-card {
-  margin-top: 4rem;
-  background: #FFFFFF;
-  border: 1px solid var(--border); /* Usa a variável que definimos antes */
-  border-radius: 1.5rem; /* Borda bem arredondada como no print */
-  padding: 2.5rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-}
+    .founder-row {
+      display: flex;
+      align-items: flex-start; /* Alinha o topo da imagem com o topo do texto */
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
 
-.founder-row {
-  display: flex;
-  gap: 1.5rem;
-  align-items: flex-start;
-  margin-bottom: 2rem;
-}
+    .founder-visual {
+      flex-shrink: 0;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid #E5E7EB;
+      background: #F9FAFB;
+    }
 
-/* Área da Imagem (Círculo) */
-.founder-visual {
-  flex-shrink: 0;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 1px solid #E5E7EB;
-  background: #F9FAFB;
-}
+    .founder-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(100%);
+    }
 
-.founder-visual img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* Se usar foto colorida, o grayscale deixa mais sério. Remova se quiser cor. */
-  filter: grayscale(100%); 
-}
+    .founder-content {
+      flex: 1;
+      padding-top: 0.2rem; /* Pequeno ajuste visual */
+    }
 
-/* Área de Texto */
-.founder-content {
-  flex: 1;
-  padding-top: 0.25rem; /* Ajuste fino para alinhar o topo do texto com o topo da imagem */
-}
+    .founder-name {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 0.35rem;
+    }
 
-.founder-name {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: #111827;
-  margin-bottom: 0.35rem;
-}
+    .founder-bio {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      color: #57534E;
+      line-height: 1.6;
+    }
 
-.founder-bio {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.95rem;
-  color: #6B7280; /* Cinza suave */
-  line-height: 1.6;
-}
+    .founders-footer {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #E5E7EB;
+      font-size: 0.9rem;
+      color: #57534E;
+      text-align: left;
+    }
 
-/* Footer do Card com a linha */
-.founders-footer {
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid #E5E7EB;
-  font-size: 0.9rem;
-  color: #374151;
-  font-family: 'Inter', sans-serif;
-}
-
-/* Responsivo para Celular */
-@media (max-width: 640px) {
-  .founders-card {
-    padding: 1.5rem;
-  }
-  
-  .founder-row {
-    flex-direction: column; /* No celular a foto fica em cima do nome */
-    gap: 0.75rem;
-    align-items: flex-start;
-  }
-  
-  .founder-visual {
-    width: 64px;
-    height: 64px;
-  }
-}
-
-    /* COMMON GRID LAYOUTS */
+    /* --- GRIDS GERAIS --- */
     .section-header {
       max-width: 600px;
       margin-bottom: 3rem;
@@ -382,7 +359,7 @@
     .card-title { font-size: 1.25rem; margin-bottom: 0.75rem; font-weight: 600; }
     .card-text { font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; }
 
-    /* TRACK RECORD (Custom Grid) */
+    /* TRACK RECORD GRID */
     .track-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -402,7 +379,7 @@
 
     /* CONTACT */
     .contact-card {
-      background: #111;
+      background: #1C1917;
       color: #fff;
       border-radius: 2rem;
       padding: 3rem 2rem;
@@ -432,15 +409,27 @@
     .footer a { text-decoration: underline; }
 
     /* === RESPONSIVE BREAKPOINTS === */
+    @media (max-width: 640px) {
+      /* Ajuste específico Mobile para Founders */
+      .founders-card {
+        padding: 1.5rem;
+      }
+      .founder-row {
+        flex-direction: column; 
+        gap: 0.8rem;
+      }
+      .founder-visual {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
     @media (min-width: 768px) {
       .nav-desktop { display: flex; }
       .hero-title { font-size: 3.5rem; }
       .hero-actions { flex-direction: row; }
       
       .metrics-grid { grid-template-columns: repeat(3, 1fr); }
-      
-      .founders-grid { grid-template-columns: 1fr 2fr; align-items: center; text-align: left; }
-      .founders-imgs { flex-direction: column; }
       
       .grid-3 { grid-template-columns: repeat(3, 1fr); }
       .track-grid { grid-template-columns: repeat(4, 1fr); }
@@ -490,8 +479,10 @@
       </div>
     </div>
 
-    <!-- METRICS + FOUNDERS -->
+    <!-- METRICS + FOUNDERS CONTAINER -->
     <div class="container">
+      
+      <!-- METRICS -->
       <div class="metrics-grid">
         <div class="card-metric">
           <span class="metric-val">+R$ 500M</span>
@@ -507,43 +498,44 @@
         </div>
       </div>
 
-      <!-- FOUNDERS CARD REFEITO -->
-<div class="founders-card">
-  
-  <!-- Sócio 1 -->
-  <div class="founder-row">
-    <div class="founder-visual">
-      <!-- Troque o src abaixo pela sua imagem real: images/carlos.jpg -->
-      <img src="https://ui-avatars.com/api/?name=Carlos+Dieter&background=F5F5F4&color=1C1917&size=128" alt="Carlos Dieter" />
-    </div>
-    <div class="founder-content">
-      <h3 class="founder-name">Carlos Dieter</h3>
-      <p class="founder-bio">
-        Especialista em Vendas & Performance. 14+ anos construindo e liderando operações comerciais omnichannel.
-      </p>
-    </div>
-  </div>
+      <!-- FOUNDERS CARD -->
+      <div class="founders-card">
+        
+        <!-- Sócio 1 -->
+        <div class="founder-row">
+          <div class="founder-visual">
+            <!-- Troque o link abaixo pela foto real (images/carlos.jpg) -->
+            <img src="https://ui-avatars.com/api/?name=Carlos+Dieter&background=F5F5F4&color=1C1917&size=128" alt="Carlos Dieter" />
+          </div>
+          <div class="founder-content">
+            <h3 class="founder-name">Carlos Dieter</h3>
+            <p class="founder-bio">
+              Especialista em Vendas & Performance. 14+ anos construindo e liderando operações comerciais omnichannel.
+            </p>
+          </div>
+        </div>
 
-  <!-- Sócio 2 -->
-  <div class="founder-row">
-    <div class="founder-visual">
-      <!-- Troque o src abaixo pela sua imagem real: images/lucas.jpg -->
-      <img src="https://ui-avatars.com/api/?name=Lucas+Steffen&background=F5F5F4&color=1C1917&size=128" alt="Lucas Steffen" />
-    </div>
-    <div class="founder-content">
-      <h3 class="founder-name">Lucas Steffen</h3>
-      <p class="founder-bio">
-        Estrategista em Produto & Dados. Foco em conectar gestão, marketing e finanças para gerar resultado real.
-      </p>
-    </div>
-  </div>
+        <!-- Sócio 2 -->
+        <div class="founder-row">
+          <div class="founder-visual">
+            <!-- Troque o link abaixo pela foto real (images/lucas.jpg) -->
+            <img src="https://ui-avatars.com/api/?name=Lucas+Steffen&background=F5F5F4&color=1C1917&size=128" alt="Lucas Steffen" />
+          </div>
+          <div class="founder-content">
+            <h3 class="founder-name">Lucas Steffen</h3>
+            <p class="founder-bio">
+              Estrategista em Produto & Dados. Foco em conectar gestão, marketing e finanças para gerar resultado real.
+            </p>
+          </div>
+        </div>
 
-  <!-- Footer do Card -->
-  <div class="founders-footer">
-    <strong>A CDX atua como extensão da liderança:</strong> do board estratégico às planilhas do dia a dia.
-  </div>
-</div>
+        <!-- Footer do Card -->
+        <div class="founders-footer">
+          <strong>A CDX atua como extensão da liderança:</strong> do board estratégico às planilhas do dia a dia.
+        </div>
       </div>
+      <!-- Fim Founders -->
+
     </div>
   </section>
 
